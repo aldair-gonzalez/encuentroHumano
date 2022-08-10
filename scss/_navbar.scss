@@ -1,0 +1,66 @@
+.Header {
+    width: 100%;
+    box-shadow: 0 0 .5rem $color-negro-3;
+    overflow: hidden;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    &-wrapper {}
+}
+
+.Navbar {
+    width: 100%;
+    padding: 1rem 0;
+    @include flex(row, nowrap, space-between, center);
+    &-logo {}
+    &-logoLink {
+        @include flex(row, nowrap, flex-start, center);
+    }
+    &-image {
+        width: 7rem;
+        height: 7rem;
+    }
+    &-svg {
+        fill: $color-negro;
+    }
+    &-h1 {
+        margin-left: 1.5rem;
+        font: {
+            weight: 900;
+            size: 2.5rem;
+        }
+    }
+
+    &-ul {
+        @include flex(row, nowrap, flex-end, center);
+    }
+    &-li {
+        margin-left: 2.5rem;
+        font: {
+            weight: 400;
+            size: 1.8rem;
+        }
+    }
+    &-link {
+        transition: 
+            background .2s ease-in-out,
+            color .2s ease-in-out,
+        ;
+
+
+        &--button {
+            color: $color-naranja;
+            padding: 1rem 2rem;
+            border: 1px solid $color-naranja;
+
+            border-radius: 10rem;
+
+            &:hover {
+                background: $color-naranja;
+                color: $color-blanco;
+            }
+        }
+    }
+}

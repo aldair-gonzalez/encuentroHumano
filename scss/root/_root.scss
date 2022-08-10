@@ -37,15 +37,6 @@ li {
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
-    ::-webkit-scrollbar{
-        // width: 6px;
-        // background: $color-blanco;
-    }
-
-    ::-webkit-scrollbar-thumb{
-        // background: $color-gris-oscuro;
-        // border-radius: 5px;
-    }
 }
 
 h1 , h2 , h3 , h4 , h5 , h6 , p ,span , a , strong , blockquote , i , b , u , em {
@@ -53,11 +44,6 @@ h1 , h2 , h3 , h4 , h5 , h6 , p ,span , a , strong , blockquote , i , b , u , em
     font-style: inherit;
     text-decoration: none;
     color:inherit;
-}
-
-::selection {
-    // background: $color;
-    // color: $color;
 }
 
 form , input, textarea, select , button , label{
@@ -83,7 +69,7 @@ svg{
 }
 
 body {
+    background: $color-blanco;
     min-height  : 100vh;
     font-size   : 1.7rem;
-    // font-family: $font;
 }

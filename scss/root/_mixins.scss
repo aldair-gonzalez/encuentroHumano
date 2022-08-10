@@ -1,4 +1,4 @@
-@mixin flex($dir, $wrap ,$jus,$alig) {
+@mixin flex($dir, $wrap ,$jus, $ali) {
     display: flex;
     flex-flow: $dir $wrap;
     justify-content: $jus;
