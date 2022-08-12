@@ -44,4 +44,10 @@ $color-gradient-azul: rgb(201, 211, 230);
 /*
 // Tipografias
 */
-    
+    // Segoe Print
+    @font-face {font-family: 'Segoe Print', sans-serif; src: url('../fonts/segoepr.ttf');};
+    $font-segoe-print: 'Segoe Print', sans-serif;
+
+    // Open Sans
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+    $font-open-sans: 'Open Sans', sans-serif;

@@ -1,4 +1,5 @@
 .Header {
+    background: $color-blanco;
     width: 100%;
     box-shadow: 0 0 .5rem $color-negro-3;
     overflow: hidden;
@@ -26,8 +27,10 @@
         fill: $color-negro;
     }
     &-h1 {
+        color: $color-azul;
         margin-left: 1.5rem;
         font: {
+            family: $font-segoe-print;
             weight: 900;
             size: 2.5rem;
         }
@@ -44,6 +47,7 @@
         }
     }
     &-link {
+        color: $color-azul;
         transition: 
             background .2s ease-in-out,
             color .2s ease-in-out,
