@@ -18,7 +18,7 @@
     // Cards
     &-cards {
         width: 100%;
-        @include grid(4,2.5rem);
+        @include grid(4,2rem);
     }
     &-card {
         width: 100%;
