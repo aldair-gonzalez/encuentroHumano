@@ -1,0 +1,119 @@
+.Carousel {
+    width: 100%;
+    height: 35rem;
+    margin: 3rem 0;
+    overflow: hidden;
+    position: relative;
+    &-container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    &-item {
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @include flex(column, nowrap, flex-start, center);
+        
+        &--one {
+            background: linear-gradient(to right, $color-azul 0%, $color-lila 100%);
+            color: $color-blanco;
+        }
+        &--two {
+            background: linear-gradient(to right, $color-lila 0%, $color-gradient-naranja 100%);
+            color: $color-azul;
+        }
+        &--tree {
+            background: $color-naranja;
+            color: $color-blanco;
+            @include flex(column, nowrap, center, center);
+        }
+        
+        pointer-events: none;
+        opacity: 0;
+        
+        transition: 
+        opacity .3s ease-in-out,
+        ;
+        &.is-active {
+            pointer-events: auto;
+            opacity: 1;
+        }
+    }
+    &-info {
+        width: 55rem;
+        height: 90%;
+
+        @include flex(column, nowrap, center, flex-start);
+
+        &--tree {
+            width: 100%;
+            .Carousel-text {
+                width: 100%;
+                text-align: center;
+                font: {
+                    weight: 700;
+                    size: 5rem;
+                }
+            }
+        }
+    }
+    &-name {
+        padding: 1rem 0;
+        font: {
+            weight: 900;
+            size: 5rem;
+        }
+    }
+    &-text {
+        width: 80%;
+        text-align: justify;
+        font: {
+            weight: 400;
+            size: 2.2rem;
+        }
+        &--span {
+            font: {
+                weight: 600;
+            }
+        }
+    }
+
+    
+    // Controles del carousel
+    &-controls {
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        pointer-events: none;
+    }
+    &-wrapper {
+        height: 100%;
+
+        @include flex(row, nowrap, space-between, center);
+    }
+    &-control {
+        color: $color-blanco;
+        width: 4rem;
+        height: 100%;
+        cursor: pointer;
+
+        pointer-events: auto;
+
+        @include flex(row, nowrap, center, center);
+        &--svg {
+            width: 100%;
+            height: 100%;
+            fill: $color-blanco;
+        }
+    }
+}
