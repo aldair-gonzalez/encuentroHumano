@@ -53,14 +53,13 @@
             color .2s ease-in-out,
         ;
 
-
         &--button {
             color: $color-naranja;
             padding: 1rem 2rem;
             border: 1px solid $color-naranja;
-
+            
             border-radius: 10rem;
-
+            
             &:hover {
                 background: $color-naranja;
                 color: $color-blanco;
