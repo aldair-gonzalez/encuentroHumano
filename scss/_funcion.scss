@@ -1,0 +1,33 @@
+
+.introFuncion{
+    background-color: $color-azul;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 25rem;
+    &-words1{
+        font:{
+            family:$font-open-sans;
+            size: 2.5rem;
+            weight:600 ;
+        }
+        color: $color-blanco;
+    }
+    &-words2{
+        font:{
+            family:$font-open-sans;
+            size:2.5rem ;
+            weight:600;
+        }
+        color: $color-blanco;
+    }
+    &-words3{
+        font:{
+            family:$font-open-sans;
+            size: 2.5rem;
+            weight:700;
+        }
+        margin-top: 1.2rem;
+        color: $color-blanco;
+    }
+
+}
