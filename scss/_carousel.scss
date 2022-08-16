@@ -27,7 +27,7 @@
             background: linear-gradient(to right, $color-lila 0%, $color-gradient-naranja 100%);
             color: $color-azul;
         }
-        &--tree {
+        &--three {
             background: $color-naranja;
             color: $color-blanco;
             @include flex(column, nowrap, center, center);
@@ -50,7 +50,7 @@
 
         @include flex(column, nowrap, center, flex-start);
 
-        &--tree {
+        &--three {
             width: 100%;
             .Carousel-text {
                 width: 100%;
