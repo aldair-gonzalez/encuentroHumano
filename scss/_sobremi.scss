@@ -1,0 +1,97 @@
+.main-container{
+    background: linear-gradient(to right, rgb(171, 182, 221) 0%, rgb(223, 167, 131) 100%);
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -1.7rem;
+}
+
+.presentacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    &-img{
+        width: 40rem;
+        height: 40rem;
+        border-radius: 50%;
+        background-color: $color-naranja;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    padding-top: 10rem;
+    margin-bottom: 5rem;
+    overflow: hidden;
+}
+
+.sobremi{
+    margin-left: 5rem;
+    &-title{
+        
+        font: {
+            family:$font-open-sans;
+            weight:800 ;
+            size: 9.5rem;
+        }
+        color: $color-azul;
+    }
+    &-text1{
+        margin-left: 2.5rem;
+        font: {
+            family:$font-open-sans;
+            weight:500 ;
+            size: 6.5rem;
+        }
+        color: $color-azul;
+    }
+    &-text{
+        margin-left: 2.5rem;
+        font: {
+            family:$font-open-sans;
+            weight:400 ;
+            size: 3.5rem;
+        }
+        color: $color-azul;
+    }
+}
+
+
+.description{
+    width: 60%;
+    height: auto;
+    border-radius: 3rem;
+    background-color: $color-blanco;
+}
+
+.dinfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    &-item{
+        width: 5rem;
+        height: auto;
+        margin-right: 2rem;
+    }
+    &-text{
+        font: {
+            family:$font-open-sans;
+            size: 2.5rem;
+            weight: 600;
+        }
+        color: $color-azul;
+    }
+    &-text2{
+        font: {
+            family:$font-open-sans;
+            size: 2.5rem;
+            weight: 700;
+        }
+        color: $color-azul;
+    }
+}
