@@ -20,17 +20,18 @@
 
         border-radius: $border-radius-card;
     }
-    &-title {
-        font: {
-            weight: 600;
-            size: 2.8rem;
-        }
-    }
     &-text {
-        padding: 1.5rem 0;
         font: {
             weight: 500;
-            size: 1.6rem;
+            size: 1.7rem;
+        }
+
+        &--auth {
+            margin: 2rem 0 0;
+            font: {
+                weight: 400;
+                size: 1.7rem;
+            }
         }
     }
     &-button {
