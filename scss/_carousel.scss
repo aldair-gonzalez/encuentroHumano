@@ -46,7 +46,7 @@
     }
     &-info {
         width: 55rem;
-        height: 90%;
+        height: 100%;
 
         @include flex(column, nowrap, center, flex-start);
 
@@ -115,6 +115,73 @@
             width: 100%;
             height: 100%;
             fill: $color-blanco;
+        }
+    }
+
+
+    // Breakpoint 1040px
+    @include media(1040px) {
+        &-info {
+            &--three {
+                .Carousel-text {
+                    font: {
+                        size: 4rem;
+                    }
+                }
+            }
+        }
+    }
+    // Breakpoint 850px
+    @include media(850px) {
+        &-info {
+            @include flex(column, nowrap, center, center);
+            &--three {
+                .Carousel-text {
+                    font: {
+                        size: 3.5rem;
+                    }
+                }
+            }
+        }
+    }
+    // Breakpoint 750px
+    @include media(750px) {
+        &-info {
+            @include flex(column, nowrap, center, center);
+            &--three {
+                width: 80%;
+                min-width: 80%;
+                .Carousel-text {
+                    font: {
+                        size: 3.5rem;
+                    }
+                }
+            }
+        }
+    }
+    // Breakpoint 680px
+    @include media(680px) {
+        &-name {
+            font: {
+                size: 4rem;
+            }
+        }
+        &-text {
+            font: {
+                size: 2rem;
+            }
+        }
+    }
+    // Breakpoint 500px
+    @include media(500px) {
+        &-info {
+            width: 80%;
+            min-width: 80%;
+        }
+        &-name {
+            font: {
+                size: 3.5rem;
+            }
         }
     }
 }
