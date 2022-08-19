@@ -144,4 +144,124 @@
         width: 100%;
         object-fit: contain;
     }
+
+
+    // Breakpoint 1350px
+    @include media(1350px) {
+        &-card {
+            &--one {
+                width: 100%;
+            }
+            &--two {
+                width: 100%;
+            }
+            &--three {
+                width: 100%;
+            }
+        }
+    }
+    // Breakpoint 1150px
+    @include media(1150px) {
+        &-content {
+            padding-bottom: 33rem;
+        }
+        &-cards {
+            &--1 {
+                height: auto;
+                @include flex(column, nowrap, center, center);
+            }
+            &--2 {
+                height: auto;
+                @include flex(column, nowrap, center, center);
+                gap: 0;
+            }
+        }
+        &-card {
+            margin: 1rem 0;
+            padding: 0;
+            &--one {
+                width: 100%;
+            }
+            &--two {
+                width: 100%;
+            }
+            &--three {
+                width: 100%;
+            }
+
+            &--four {
+                width: 100%;
+            }
+            &--five {
+                width: 100%;
+            }
+
+            &Content {
+                width: 100%;
+            }
+        }
+    }
+    // Breakpoint 1000px
+    @include media (1000px) {
+        &-card {
+            &P {
+                width: 100%;
+                font: {
+                    size: 2rem;
+                }
+            }
+            &Span {
+                font: {
+                    size: 2rem;
+                }
+            }
+            &Text {
+                font: {
+                    size: 1.7rem;
+                }
+            }
+        }
+    }
+    // Breakpoint 900px
+    @include media (900px) {
+        &-content {
+            padding-bottom: 25rem;
+        }
+    }
+    // Breakpoint 600px
+    @include media (600px) {
+        &-content {
+            padding-bottom: 20rem;
+        }
+    }
+    // Breakpoint 535px
+    @include media (535px) {
+        &-content {
+            padding-bottom: 15rem;
+        }
+        &-title {
+            font: {
+                size: 2.8rem;
+            }
+        }
+        &-card {
+            &Icon {
+                width: 3rem;
+                height: 3rem;
+                top: 1rem;
+                left: 1rem;
+                padding: .5rem;
+            }
+        }
+    }
+    @include media (455px) {
+        &-content {
+            padding-bottom: 12rem;
+        }
+        &-title {
+            font: {
+                size: 2.5rem;
+            }
+        }
+    }
 }

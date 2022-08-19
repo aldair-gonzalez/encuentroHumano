@@ -126,4 +126,162 @@
             size: 1.8rem;
         }
     }
+
+
+    // Breakpoint 1420px
+    @include media(1420px) {
+        &-circle {
+            width: 30rem;
+            height: 30rem;
+        }
+    }
+    // Breakpoint 1230px
+    @include media(1230px) {
+        &-circle {
+            width: 25rem;
+            height: 25rem;
+        }
+    }
+    // Breakpoint 1150px
+    @include media(1150px) {
+        &-info {
+            @include flex(column, nowrap, center, center);
+        }
+        &-content {
+            width: 100%;
+        }
+        &-link {
+            width: 100%;
+            @include flex(column, nowrap, center, center);
+        }
+        &-button {
+            width: auto;
+            padding: 1rem 1.5rem;
+        }
+    }
+    // Breakpoint 1050px
+    @include media(1050px) {
+        &-wrapper {
+            position: relative;
+            @include flex(column, nowrap, flex-start, center);
+        }
+        &-image {
+            width: auto;
+            height: auto;
+        }
+        &-circle {
+            position: absolute;
+            top: -3rem;
+            left: 0;
+        }
+        &-h2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        &-info {
+            width: 100%;
+            margin-top: 8rem;
+        }
+    }
+    // Breakpoint 820px
+    @include media(820px) {
+        &-circle {
+            position: absolute;
+            top: -3rem;
+            left: 0;
+
+            width: 20rem;
+            height: 20rem;
+        }
+        &-h2 {
+            &--greeting {
+                font: {
+                    size: 5rem;
+                }
+            }
+            &--name {
+                font: {
+                    size: 5rem;
+                }
+            }
+        }
+        &-info {
+            margin-top: 4rem;
+        }
+    }
+    // Breakpoint 680px
+    @include media(680px) {
+        &-h2 {
+            &--greeting {
+                font: {
+                    size: 4rem;
+                }
+            }
+            &--name {
+                font: {
+                    size: 4rem;
+                }
+            }
+        }
+        &-item {
+            font: {
+                size: 2rem;
+            }
+        }
+    }
+    // Breakpoint 600px 
+    @include media(600px) {
+        height: 60rem;
+    }
+    // Breakpoint 500px 
+    @include media(500px) {
+        &-wrapper {
+            gap: 0;
+        }
+        &-circle {
+            width: 15rem;
+            height: 15rem;
+        }
+        &-info {
+            margin-top: 0;
+        }
+    }
+    // Breakpoint 450px 
+    @include media(450px) {
+        height: 55rem;
+        &-h2 {
+            &--greeting {
+                font: {
+                    size: 3.5rem;
+                }
+            }
+            &--name {
+                font: {
+                    size: 3.5rem;
+                }
+            }
+        }
+        &-info {
+            margin-top: 3rem;
+        }
+        &-list {
+            padding: 0;
+        }
+    }
+    // Breakpoint 420px 
+    @include media(420px) {
+        &-h2 {
+            &--greeting {
+                font: {
+                    size: 3rem;
+                }
+            }
+            &--name {
+                font: {
+                    size: 3rem;
+                }
+            }
+        }
+    }
 }
