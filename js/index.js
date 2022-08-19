@@ -9,6 +9,10 @@ const carouselButtonNext = document.getElementById('Carousel-button-next');
 const carouselItems = [...document.getElementsByClassName('Carousel-item')];
 
 
+// Navbar
+const navbar = document.getElementById('Navbar');
+const hamburger = document.getElementById('Hamburger');
+
 // Carousel
 if (carouselItems.length > 0) {
     let i = 0;
@@ -28,3 +32,9 @@ if (carouselItems.length > 0) {
         toggleActive();
     });
 }
+
+navbar.style.top = header.offsetHeight + 'px';
+
+hamburger.addEventListener('click', () => {
+    navbar.classList.toggle('is-active');
+});
