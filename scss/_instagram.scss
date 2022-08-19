@@ -13,6 +13,7 @@
     &-h2 {
         color: $color-naranja;
         padding: 2rem 0;
+        text-align: center;
     }
     &-h22 {
         color: $color-blanco;
@@ -36,7 +37,6 @@
     }
     &-icon {
         width: 12.5rem;
-        height: 12.5rem;
     }
     &-img {
         width: 100%;
@@ -57,5 +57,35 @@
             size: 2.5rem;
         }
         text-align: center;
+    }
+
+    
+    // Breakpoint 680px
+    @include media(680px) {
+        &-header {
+            font: {
+                size: 2.8rem;
+            }
+        }
+        &-card {
+            width: 100%;
+        }
+        &-p {
+            font: {
+                size: 2.5rem;
+            }
+        }
+    }
+    @include media(480px) {
+        &-header {
+            font: {
+                size: 2.5rem;
+            }
+        }
+        &-p {
+            font: {
+                size: 2.3rem;
+            }
+        }
     }
 }
