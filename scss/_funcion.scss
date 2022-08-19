@@ -58,6 +58,7 @@
         margin: 1rem;
         margin-right: 1.5rem;
     }
+    
 }
 
 
@@ -83,7 +84,6 @@
     }
     color: $color-azul;
 }
-
 .cards1-info_btn{
     display: flex;
     flex-direction: row;
@@ -98,13 +98,11 @@
         size:2.5rem;
         weight: 600;
     }
-    padding: 1rem;
-    color: $color-azul;
     background-color: $color-naranja;
-    border-radius: 4rem;
-    width: 30%;
-    height: auto;
-    margin-left:15rem ;
+    color: $color-azul;
+    border-radius: 3rem;
+    padding: 0.8rem;
+    margin-left: 10rem;
 }
 
 .cards1-reverse{
@@ -205,3 +203,70 @@
     }
     color: $color-azul;
 }
+
+//breakpoint 1700px//
+@include media(1720px){
+    .cards1{
+        &-img{
+            width: 45rem;
+            height: auto;
+        }
+        
+    }
+    .info1-text{
+        font:{
+            size: 2rem;
+        }
+    }
+    .btnAgendar{
+        font:{
+            size:2rem;
+        }
+    }
+
+}
+
+//breakpoint 1329px//
+@include media(1329px){
+    .cards1{
+        &-img{
+            width: 34rem;
+            height: auto;
+        }
+        
+    }
+    .info1-text{
+        font:{
+            size: 2rem;
+        }
+    }
+    .btnAgendar{
+        font:{
+            size:2rem;
+        }
+    }
+
+}
+
+//breakpoint 1200px//
+@include media(1200px){
+    .cards1{
+        &-img{
+            width: 30rem;
+            height: 28rem;
+        }
+        
+    }
+    .info1-text{
+        font:{
+            size: 2rem;
+        }
+    }
+    .btnAgendar{
+        font:{
+            size:2rem;
+        }
+    }
+
+}
+//breackpoint
