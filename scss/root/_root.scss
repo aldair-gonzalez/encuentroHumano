@@ -37,6 +37,10 @@ li {
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
+
+    @include media(600px) {
+        font-size: 52.5%;
+    }
 }
 
 h1 , h2 , h3 , h4 , h5 , h6 , p ,span , a , strong , blockquote , i , b , u , em {

@@ -66,4 +66,104 @@
             }
         }
     }
+
+    &-hamburger {
+        display: none;
+    }
+    &-button {
+        cursor: pointer;
+        @include flex(column, nowrap, center, center);
+        gap: .5rem;
+    }
+    &-line {
+        background: $color-azul;
+        width: 3.5rem;
+        height: .3rem;
+    }
+
+
+    // Breakpoint: 1100px
+    @include media(1100px) {
+        &-ul {
+            position: fixed;
+            left: 0;
+            background: $color-blanco;
+        
+            width: 100%;
+            padding: 2rem;
+
+            @include flex(row, nowrap, center, center);
+
+            opacity: 0;
+            pointer-events: none;
+            transition: 
+                opacity .3s ease-in-out,
+            ;
+
+            &.is-active {
+                opacity: 1;
+                pointer-events: auto;
+            }
+        }
+        &-li {
+            margin: 0 1rem;
+        }
+        &-link {
+            &--button {
+                color: $color-azul;
+                padding: 0;
+                
+                border: none;
+                border-radius: 0;
+
+                font: {
+                    weight: 900;
+                }
+            }
+        }
+
+        &-hamburger {
+            display: block;
+        }
+    }
+
+
+    // Breakpoint: 600px
+    @include media(600px) {
+        &-image {
+            width: 5rem;
+            height: 5rem;
+        }
+        // &-h1 {
+        //     font: {
+        //         size: 2rem;
+        //     }
+        // }
+        // &-li {
+        //     font: {
+        //         size: 1.5rem;
+        //     }
+        // }
+    }
+
+
+    // Breakpoint: 500px
+    @include media(500px) {
+        &-ul {
+            padding: 0;
+            padding: 1rem 2rem;
+            @include flex(column, nowrap, center, flex-start);
+        }
+        &-li {
+            margin: 0;
+            padding: 1.5rem 0;
+        }
+        &-link {
+            &--button {
+                font: {
+                    weight: 900;
+                }
+            }
+        }
+    }
 }
