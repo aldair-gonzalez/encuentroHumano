@@ -41,9 +41,14 @@
     }
     &-li {
         margin-left: 2.5rem;
+        padding: .5rem 0;
+
         font: {
             weight: 600;
             size: 1.8rem;
+        }
+        &.is-active {
+            border-bottom: 3px solid $color-azul;
         }
     }
     &-link {
@@ -82,8 +87,8 @@
     }
 
 
-    // Breakpoint: 1100px
-    @include media(1100px) {
+    // Breakpoint: 1180px
+    @include media(1180px) {
         &-ul {
             position: fixed;
             left: 0;
@@ -119,6 +124,11 @@
                 font: {
                     weight: 900;
                 }
+
+                &:hover {
+                    background: transparent;
+                    color: $color-azul;
+                }
             }
         }
 
@@ -134,16 +144,6 @@
             width: 5rem;
             height: 5rem;
         }
-        // &-h1 {
-        //     font: {
-        //         size: 2rem;
-        //     }
-        // }
-        // &-li {
-        //     font: {
-        //         size: 1.5rem;
-        //     }
-        // }
     }
 
 
