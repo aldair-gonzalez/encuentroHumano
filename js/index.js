@@ -32,6 +32,7 @@ function handleCarousel(array, after, before, circles) {
         if (array.length > 0) {
             let i = 0;
             array[0].classList.add('is-active');
+            circles ? circles[0].classList.add('is-active') : null;
             function toggleActive() {
                 i >= array.length ? i = 0 : null;
                 i < 0 ? i = array.length - 1 : null;
