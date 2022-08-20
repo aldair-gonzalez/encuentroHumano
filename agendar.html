@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="http://www.example.com/">
-    <link rel="icon" type="image/png" href="assets/logo/logo.png">
+    <link rel="icon" type="image/png" href="assets/logo/Logo.png">
     <title>Encuentro humano / Agendar</title>
     <link rel="stylesheet" href="css/app.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script defer src="js/index.js"></script>
 </head>
 <body>
@@ -42,6 +43,81 @@
     </header>
 
 
+    <!-- Agendar -->
+    <div class="Schedule">
+        <div class="Schedule-wraper Wrapper">
+            <div class="Schedule-header">
+                <h2 class="Schedule-h2">¿Cómo agendar un encuentro?</h2>
+            </div>
+            <div class="Schedule-cards">
+                <div class="Schedule-card">
+                    <span class="Schedule-number">1</span>
+                    <p class="Schedule-text">
+                        Mandame un <span class="Schedule-text--span"><a href="/">Whatsapp</a></span> con tu nombre y apellido.
+                    </p>
+                </div>
+                <div class="Schedule-card">
+                    <span class="Schedule-number">2</span>
+                    <p class="Schedule-text">
+                        Contame qué tipo de encuentro o consulta necesitás hacer.
+                    </p>
+                </div>
+                <div class="Schedule-card">
+                    <span class="Schedule-number">3</span>
+                    <p class="Schedule-text">
+                        Coordinamos una primera entrevista para conocernos un poco más.
+                    </p>
+                </div>
+                <div class="Schedule-card">
+                    <span class="Schedule-number">4</span>
+                    <p class="Schedule-text">
+                        <span class="Schedule-text--span">Y listo!</span> A partir de entonces vamos a poder comenzar este proceso.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulario de contacto -->
+    <section class="Form">
+        <div class="Form-waves">
+            <div class="Form-wave">
+                <svg class="Form-waveSvg" width="1920" height="340" viewBox="0 0 1920 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 318.529V0H1920V340C1866.18 270.51 1806.92 227.773 1742.22 211.787C1645.16 187.809 1580.91 202.76 1483 184.005C1385.09 165.249 1317.81 108.521 1246.42 102.612C1175.03 96.7026 1044.62 116.349 967.412 116.349C890.201 116.349 713.911 101.969 658.918 106.471C603.926 110.972 554.737 154.9 459.961 180.927C365.186 206.954 227.838 191.034 149.245 215.049C96.85 231.059 47.102 265.553 0 318.529Z"/>
+                </svg>                    
+            </div>
+            <div class="Form-wave">
+                <svg class="Form-waveSvg Form-waveSvg--white" width="1920" height="300" viewBox="0 0 1920 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 18.9447V300H1920V0C1866.18 61.3146 1806.92 99.0236 1742.22 113.129C1645.16 134.286 1580.91 121.094 1483 137.643C1385.09 154.192 1317.81 204.246 1246.42 209.46C1175.03 214.674 1044.62 197.339 967.412 197.339C890.201 197.339 713.911 210.027 658.918 206.055C603.926 202.083 554.737 163.323 459.961 140.358C365.186 117.394 227.838 131.44 149.245 110.251C96.85 96.1242 47.102 65.6888 0 18.9447Z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="Form-absolute">
+            <div class="Form-wrapper Wrapper">
+                <div class="Form-header">
+                    <h2 class="Form-h2">También podés dejarme un mail:</h2>
+                </div>
+                <form class="Form-form" action="" id="Form">
+                    <div class="Form-containerInput">
+                        <input class="Form-input" type="text" placeholder="Nombre" id="Form-name" required>
+                    </div>
+                    <div class="Form-containerInput">
+                        <input class="Form-input" type="email" placeholder="Mail" id="Form-mail" required>
+                    </div>
+                    <div class="Form-containerInput">
+                        <textarea class="Form-input Form-input--textarea" placeholder="¿En qué te puedo ayudar?" id="Form-message" required></textarea>
+                        <button class="Form-send" type="submit">
+                            <svg class="Form-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
     <!-- WhatsApp -->
     <div class="WhatsApp">
         <button class="WhatsApp-button">
@@ -59,6 +135,25 @@
                 </svg>                    
             </a>
         </button>
+    </div>
+
+
+    <!-- Instagram -->
+    <div class="Instagram">
+        <div class="Instagram-wrapper Wrapper">
+            <div class="Instagram-header">
+                <h2 class="Instagram-h2">¡No te pierdas de nada!</h2>
+            </div>
+            <div class="Instagram-content">
+                <a class="Instagram-card" target="_blank" href="https://www.instagram.com">
+                    <div class="Instagram-icon">
+                        <img class="Instagram-img" src="./assets/icons/instagram.svg">
+                    </div>
+                    <p class="Instagram-p">encuentrohumanocounseling</p>
+                </a>
+                <p class="Instagram-text">Novedades, datos curiosos información y mucho más</p>
+            </div>
+        </div>
     </div>
 
     
