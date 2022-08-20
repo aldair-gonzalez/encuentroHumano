@@ -146,6 +146,7 @@ form.addEventListener('submit', (e) => {
                console.log('FAILED...', error);
         });
         alert('Gracias por contactarnos');
+        location.reload();
     } else {
         alert('Favor de llenar todos los campos sin caracteres especiales');
     }
