@@ -345,11 +345,36 @@
 
 }
 
-//breackpoint 600px
+//breackpoint 672px
 @include media(600px){
-    .main-cards{
-        margin-top: -4rem;
+    .card1-img{
+        width: 18rem;
+        height: 18rem;
+
+    }
+    .info1-title{
+        font-size: 3rem;
+    }
+    .info1-text{
+        font-size: 1.8rem;
     }
 }
 
-//f
+//breackpoint 600px
+@include media(600px){
+    .main-cards{
+        margin-top: -2rem;
+    }
+}
+
+//breackpoint 495px
+@include media(495px){
+    .info1-title{
+        font-size: 3rem;
+    }
+
+    .card2-image{
+        width: 17rem;
+        height: 17rem;
+    }
+}
