@@ -150,6 +150,10 @@
         color: $color-naranja;
     }
 }
+// cardsmobile//
+.cardsmobile{
+    display: none;
+}
 
 //cards2//
 .cards2{
@@ -175,7 +179,7 @@
 
  .card2-image{
     width: 30rem;
-    height: auto;
+    height: 30rem;
     margin-right: 1rem;
     margin-left: 1.5rem;
     border-radius: 3rem;
@@ -204,6 +208,8 @@
     color: $color-azul;
 }
 
+
+
 //breakpoint 1700px//
 @include media(1720px){
     .cards1{
@@ -225,7 +231,19 @@
     }
 
 }
-
+//breackpoint 1736px
+@include media(1736px){
+    .card2-image{
+        width: 24rem;
+        height: 24rem;
+    }
+    .card2-title{
+        font-size: 4rem;
+    }
+    .card2-text{
+        font-size: 2rem;
+    }
+}
 //breakpoint 1329px//
 @include media(1329px){
     .cards1{
@@ -269,4 +287,94 @@
     }
 
 }
-//breackpoint
+
+//breackpoint 1180px
+@include media(1180px){
+    .vinieta1{
+        padding-left: 2rem;
+    }
+    .cards-container{
+        background: linear-gradient(to right, rgb(171, 182, 221) 0%, rgb(223, 167, 131) 100%);
+    }
+    .cards1{
+        display: none;
+    }
+    .cards2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-2{
+        width: 95%;
+    }
+    .cards1-reverse{
+        display:none;
+    }
+
+    .cardsmobile{
+        display: flex;
+        flex-direction: column;
+        background-color: $color-gradient-azul-9;
+        padding: 1rem;
+        border-radius: 3rem;
+        width: 85%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .cardsmobile-imginfo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    .cards1-img{
+        width: 18rem;
+        height: 18rem;
+    }
+    .vinieta2-words1{
+        font-size: 3.5rem;
+
+    }
+    .vinieta2-words2{
+        font-size: 2.5rem;
+    }
+    .vinieta2{
+        padding-left: 2rem;
+    }
+
+}
+
+//breackpoint 672px
+@include media(600px){
+    .card1-img{
+        width: 18rem;
+        height: 18rem;
+
+    }
+    .info1-title{
+        font-size: 3rem;
+    }
+    .info1-text{
+        font-size: 1.8rem;
+    }
+}
+
+//breackpoint 600px
+@include media(600px){
+    .main-cards{
+        margin-top: -2rem;
+    }
+}
+
+//breackpoint 495px
+@include media(495px){
+    .info1-title{
+        font-size: 3rem;
+    }
+
+    .card2-image{
+        width: 17rem;
+        height: 17rem;
+    }
+}
