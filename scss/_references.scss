@@ -24,7 +24,6 @@
     }
     &-slide {
         width: 100%;
-        margin-top: 3rem;
         @include flex(column, nowrap, center, center);
 
         position: relative;
@@ -146,6 +145,26 @@
         &-auth {
             font: {
                 size: 1.3rem;
+            }
+        }
+    }
+    // Breakpoint 440px
+    @include media(440px) {
+        &-h2 {
+            font: {
+                size: 3.5rem;
+            }
+        }
+        &-collection {
+            width: 35rem;
+            height: 20rem;
+        }
+        &-item {
+            padding: 2rem;
+        }
+        &-p {
+            font: {
+                size: 1.8rem;
             }
         }
     }

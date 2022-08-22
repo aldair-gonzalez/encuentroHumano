@@ -9,11 +9,6 @@ const carouselItems = [...document.getElementsByClassName('Carousel-item')];
 const navbar = document.getElementById('Navbar');
 const hamburger = document.getElementById('Hamburger');
 
-// Encuentros Slide Cards
-const encuentrosCards = document.getElementById('Encuentros-cards');
-const EncuentrosBtnAfter = document.getElementById('Encuentros-btn--after');
-const EncuentrosBtnBefore = document.getElementById('Encuentros-btn--before');
-
 // Slide
 const ReferencesItem = [...document.getElementsByClassName('References-item')];
 const ReferencesButtonBefore = document.getElementById('References-button-before');
@@ -63,32 +58,6 @@ hamburger.addEventListener('click', () => {
     navbar.classList.toggle('is-active');
 });
 
-
-// Encuentros Slide Cards
-if (encuentrosCards) {
-    const cards = [...encuentrosCards.children];
-    let i = 0;
-    function handleEncuentrosCards() {
-        if (i < -cards.length + 1) {
-            i = 0;
-        }
-        if (i > 0) {
-            i = -cards.length + 1;
-        }
-        for (const card of cards) {
-            card.style.transform = `translateX(${i * 100}%)`;
-            console.log(i);
-        }
-    }
-    EncuentrosBtnAfter.addEventListener('click', () => {
-        i++;
-        handleEncuentrosCards();
-    });
-    EncuentrosBtnBefore.addEventListener('click', () => {
-        i--;
-        handleEncuentrosCards();
-    });
-}
 
 
 // Formulario de mail

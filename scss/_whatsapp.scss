@@ -1,13 +1,24 @@
 .WhatsApp {
     position: fixed;
-    bottom: 4rem;
-    right: 4rem;
+    bottom: 0;
+    right: 0;
 
+    width: 100%;
+    
     z-index: 2;
+
+    pointer-events: none;
+
+    &-wrapper {
+        padding: 2rem 0;
+        @include flex(row, nowrap, flex-end, center);
+    }
     &-button {
         background: $color-blanco;
-        width: 7rem;
-        height: 7rem;
+        width: 6rem;
+        height: 6rem;
+
+        pointer-events: auto;
 
         border-radius: 10rem;
         cursor: pointer;

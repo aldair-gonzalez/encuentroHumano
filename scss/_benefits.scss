@@ -2,10 +2,11 @@
     width: 100%;
     overflow: hidden;
     &-wrapper {
-        padding: 4rem 6rem;
+        padding: 0 6rem;
     }
     &-grid {
         width: 100%;
+        margin-top: 3rem;
         @include grid(3,6rem);
     }
     &-item {

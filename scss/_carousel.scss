@@ -1,7 +1,6 @@
 .Carousel {
     width: 100%;
     height: 35rem;
-    margin: 3rem 0;
     overflow: hidden;
     position: relative;
     &-container {
@@ -181,6 +180,33 @@
         &-name {
             font: {
                 size: 3.5rem;
+            }
+        }
+    }
+    // Breakpoint 480px
+    @include media(480px) {
+        &-info {
+            overflow: hidden;
+
+            padding: 0 1.5rem;
+        }
+        &-name {
+            width: 100%;
+        }
+        &-text {
+            width: 100%;
+        }
+    }
+    // Breakpoint 420px
+    @include media(420px) {
+        &-name {
+            font: {
+                size: 3rem;
+            }
+        }
+        &-text {
+            font: {
+                size: 1.8rem;
             }
         }
     }

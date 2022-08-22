@@ -2,9 +2,7 @@
     background: $color-azul;
     width: 100%;
     overflow: hidden;
-    &-wraper {
-        overflow: hidden;
-    }
+    &-wraper {}
     &-header {
         color: $color-blanco;
         padding: 6rem 0;
@@ -17,10 +15,9 @@
     }
     &-cards {
         width: 100%;
-        padding: 0 2.5rem;
 
         @include flex(row, nowrap, space-between, flex-start);
-        gap: 5rem;
+        gap: 3rem;
     }
     &-card {
         background: $color-blanco;

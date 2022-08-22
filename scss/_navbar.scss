@@ -150,7 +150,6 @@
     // Breakpoint: 500px
     @include media(500px) {
         &-ul {
-            padding: 0;
             padding: 1rem 2rem;
             @include flex(column, nowrap, center, flex-start);
         }
@@ -163,6 +162,22 @@
                 font: {
                     weight: 900;
                 }
+            }
+        }
+    }
+    // Breakpoint: 450px
+    @include media(450px) {
+        &-h1 {
+            font: {
+                size: 2.2rem;
+            }
+        }
+    }
+    // Breakpoint: 400px
+    @include media(400px) {
+        &-h1 {
+            font: {
+                size: 2rem;
             }
         }
     }
