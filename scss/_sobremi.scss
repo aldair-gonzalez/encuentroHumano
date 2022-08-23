@@ -60,10 +60,11 @@
 
 
 .description{
-    width: 60%;
+    width: 75%;
     height: auto;
     border-radius: 3rem;
     background-color: $color-blanco;
+    margin-bottom: 1.5rem;
 }
 
 .dinfo{
@@ -84,12 +85,13 @@
             size: 2.5rem;
             weight: 600;
         }
+        margin-right: 2rem;
         color: $color-azul;
     }
     &-text2{
         font: {
             family:$font-open-sans;
-            size: 2.5rem;
+
             weight: 700;
         }
         color: $color-azul;

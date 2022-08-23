@@ -90,6 +90,7 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 .btnAgendar{
@@ -101,7 +102,7 @@
     background-color: $color-naranja;
     color: $color-azul;
     border-radius: 3rem;
-    padding: 0.8rem;
+    padding: 1.7rem;
     margin-left: 10rem;
 }
 
@@ -206,6 +207,9 @@
         size: 2.5rem;
     }
     color: $color-azul;
+}
+.card2-text2{
+    font-weight: 600;
 }
 
 

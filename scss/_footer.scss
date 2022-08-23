@@ -7,11 +7,13 @@
     padding-bottom: 2.5rem;
     margin-top: 1.5rem;
     display:flex ;
-    justify-content: space-evenly;
+    justify-content: space-between;
     &-arrow{
         width: 7rem;
         height: auto;
     }
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
 
 
@@ -57,3 +59,9 @@
 }
 
 
+//breackpoint//
+@include media(1180px){
+    .footer{
+        justify-content: space-evenly;
+    }
+}
