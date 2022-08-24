@@ -22,16 +22,30 @@
             size: 2.5rem;
         }
     }
+<<<<<<< HEAD
     &-cards {
         width: 100%;
         overflow: hidden;
         @include flex(column, nowrap, center, center);
         gap: 5.5rem;
+=======
+    color: $color-azul;
+}
+.cards1-info_btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+>>>>>>> ae549588bad8d4f1f332c66265b7b58cb68faab3
 
         &--mobile {
             display: none;
         }
     }
+<<<<<<< HEAD
     &-containerCard {
         width: 100%;
         @include flex(column, nowrap, center, flex-start);
@@ -41,6 +55,34 @@
                 @include flex(row-reverse, nowrap, flex-start, center);
             }
         }
+=======
+    background-color: $color-naranja;
+    color: $color-azul;
+    border-radius: 3rem;
+    padding: 1.7rem;
+    margin-left: 10rem;
+}
+
+.cards1-reverse{
+    width: 75%;
+    border-radius: 3rem;
+    background-color: $color-gradient-azul-9;
+    box-shadow: $box-shadow-card;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 20rem;
+
+    &-img{
+        width: 65rem;
+        height: auto;
+        border-radius: 3rem;
+        margin: 1rem;
+        margin-right: 1.5rem;
+>>>>>>> ae549588bad8d4f1f332c66265b7b58cb68faab3
     }
     &-card {
         background: $color-azul-claro;
@@ -225,11 +267,29 @@
 
         position: relative;
     }
+<<<<<<< HEAD
     &-img {
         object-fit: cover;
     }
     &-gradient {
         background: $color-azul-4;
+=======
+    color: $color-azul;
+}
+.card2-text2{
+    font-weight: 600;
+}
+
+
+
+//breakpoint 1700px//
+@include media(1720px){
+    .cards1{
+        &-img{
+            width: 45rem;
+            height: auto;
+        }
+>>>>>>> ae549588bad8d4f1f332c66265b7b58cb68faab3
         
         position: absolute;
         top: 0;

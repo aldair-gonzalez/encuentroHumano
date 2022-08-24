@@ -1,5 +1,6 @@
 .Footer {
     background: $color-azul;
+<<<<<<< HEAD
     color: $color-blanco;
     width: 100%;
     padding: 4rem 0;
@@ -20,6 +21,32 @@
         height: 100%;
         @include flex(row, nowrap, flex-start, center);
         gap: 1rem;
+=======
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    margin-top: 1.5rem;
+    display:flex ;
+    justify-content: space-between;
+    &-arrow{
+        width: 7rem;
+        height: auto;
+    }
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &-image{
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        margin-right: 15px;
+>>>>>>> ae549588bad8d4f1f332c66265b7b58cb68faab3
     }
     &-img {
         object-fit: contain;
@@ -51,11 +78,18 @@
         color: $color-azul;
         overflow: hidden;
 
+<<<<<<< HEAD
         cursor: pointer;
         border-radius: .5rem;
     }
     &-svg {
         width: 5rem;
         height: 5rem;
+=======
+//breackpoint//
+@include media(1180px){
+    .footer{
+        justify-content: space-evenly;
+>>>>>>> ae549588bad8d4f1f332c66265b7b58cb68faab3
     }
 }
