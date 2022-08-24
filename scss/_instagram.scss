@@ -14,10 +14,9 @@
         color: $color-naranja;
         padding: 2rem 0;
         text-align: center;
-    }
-    &-h22 {
-        color: $color-blanco;
-        padding: 2rem 0;
+        &--white {
+            color: $color-blanco;
+        }
     }
     &-content {
         width: 100%;

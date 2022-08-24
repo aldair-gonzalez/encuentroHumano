@@ -1,380 +1,435 @@
-
-//vinieta azul
-.vinieta1{
-    background-color: $color-azul;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    padding-left: 25rem;
-    &-words1{
-        font:{
-            family:$font-open-sans;
-            size: 2.5rem;
-            weight:600 ;
-        }
-        color: $color-blanco;
-    }
-    &-words2{
-        font:{
-            family:$font-open-sans;
-            size:2.5rem ;
-            weight:600;
-        }
-        color: $color-blanco;
-    }
-    &-words3{
-        font:{
-            family:$font-open-sans;
-            size: 2.5rem;
-            weight:700;
-        }
-        margin-top: 1.2rem;
-        color: $color-blanco;
-    }
-
-}
- //cards1//
- .cards-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
- }
-.cards1{
-    width: 75%;
-    border-radius: 3rem;
-    background-color: $color-gradient-azul-9;
-    box-shadow: $box-shadow-card;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+// Modalidad
+.Modality {
+    width: 100%;
     overflow: hidden;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-
-    &-img{
-        width: 65rem;
-        height: auto;
-        border-radius: 3rem;
-        margin: 1rem;
-        margin-right: 1.5rem;
+    &-wrapper {}
+    &-header {
+        background: $color-azul;
+        color: $color-blanco;
+        padding: 4rem 0;
     }
-    
-}
-
-
-
-
-.info1{
-    margin-left: 2.5rem;
-}
-.info1-title{
-    font:{
-        family:$font-open-sans;
-        size: 4rem;
-        weight:800;
+    &-h2 {
+        font: {
+            weight: 500;
+            size: 2.5rem;
+        }
+        @include flex(column, nowrap, center, flex-start);
     }
-    color: $color-azul;
-}
-
-.info1-text{
-    font:{
-        family:$font-open-sans;
-        size: 2.5rem;
-        weight:400;
+    &-p {
+        margin-top: 2rem;
+        font: {
+            weight: 600;
+            size: 2.5rem;
+        }
     }
-    color: $color-azul;
-}
-.cards1-info_btn{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 3rem;
-}
+    &-cards {
+        width: 100%;
+        overflow: hidden;
+        @include flex(column, nowrap, center, center);
+        gap: 5.5rem;
 
-.btnAgendar{
-    font:{
-        family:$font-open-sans;
-        size:2.5rem;
-        weight: 600;
+        &--mobile {
+            display: none;
+        }
     }
-    background-color: $color-naranja;
-    color: $color-azul;
-    border-radius: 3rem;
-    padding: 0.8rem;
-    margin-left: 10rem;
-}
-
-.cards1-reverse{
-    width: 75%;
-    border-radius: 3rem;
-    background-color: $color-gradient-azul-9;
-    box-shadow: $box-shadow-card;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    overflow: hidden;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 20rem;
-
-    &-img{
-        width: 65rem;
-        height: auto;
-        border-radius: 3rem;
-        margin: 1rem;
-        margin-right: 1.5rem;
+    &-containerCard {
+        width: 100%;
+        @include flex(column, nowrap, center, flex-start);
+        &--reverse {
+            @include flex(column, nowrap, center, flex-end);
+            .Modality-card {
+                @include flex(row-reverse, nowrap, flex-start, center);
+            }
+        }
     }
-}
+    &-card {
+        background: $color-azul-claro;
+        width: 80%;
+        height: 45rem;
+        overflow: hidden;
 
- //vinieta azul con letras naranjas//
- .vinieta2{
-    background-color: $color-azul;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    padding-left: 25rem;
-    &-words1{
-        font:{
-            family:$font-open-sans;
+        border-radius: 3.5rem;
+        box-shadow: 3px 3px 3px $color-negro-2;
+
+        @include flex(row, nowrap, flex-start, center);
+    }
+    &-image {
+        width: 42rem;
+        height: 100%;
+        overflow: hidden;
+
+        border-radius: 3.5rem;
+
+        position: relative;
+    }
+    &-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &-gradient {
+        background: $color-azul-4;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+    }
+    &-info {
+        color: $color-azul;
+        width: calc(100% - 42rem);
+        height: 100%;
+        padding: 3.5rem;
+
+        @include flex(column, nowrap, space-between, flex-start);
+    }
+    &-text {
+        width: 100%;
+    }
+    &-h3 {
+        font: {
+            weight: 700;
             size: 5rem;
-            weight:800 ;
         }
-        color: $color-naranja;
     }
-    &-words2{
-        font:{
-            family:$font-open-sans;
-            size:4rem ;
-            weight:600;
+    &-desc {
+        margin: 1.5rem 0;
+        font: {
+            weight: 500;
+            size: 2.3rem;
         }
-        color: $color-naranja;
     }
-}
-// cardsmobile//
-.cardsmobile{
-    display: none;
+    &-ul {
+        font: {
+            weight: 400;
+            size: 2rem;
+        }    
+    }
+    &-li {
+        margin-left: 3rem;
+        list-style: disc;
+    }
+    &-contact {
+        width: 100%;
+
+        @include flex(row, nowrap, space-between, center);
+    }
+    &-duration {
+        @include flex(column, nowrap, center, flex-start);
+
+        font: {
+            weight: 400;
+            size: 1.8rem;
+        }
+    }
+    &-a {
+        background: $color-naranja;
+        padding: 1rem 1.5rem;
+
+        border-radius: 10rem;
+
+        font: {
+            weight: 600;
+            size: 1.9rem;
+        }
+    }
+
+    @include media(1300px) {
+        &-card {
+            width: 85%;
+        }
+    }
+    @include media(1230px) {
+        &-card {
+            width: 90%;
+        }
+    }
+    @include media(1180px) {
+        &-h3 {
+            font: {
+                size: 4rem;
+            }
+        }
+        &-desc {
+            font: {
+                size: 2rem;
+            }
+        }
+        &-ul {
+            font: {
+                size: 1.8rem;
+            }    
+        }
+    }
+    @include media(1050px) {
+        &-cards {
+            overflow: visible;
+        }
+        &-card {
+            width: 100%;
+        }
+    }
+    @include media(960px) {
+        background: linear-gradient(to right, $color-lila 0%, $color-gradient-naranja 100%);
+        &-cards {
+            display: none;
+            &--mobile {
+                display: block;
+                @include flex(column, nowrap, center, center);
+                gap: 2rem;
+            }
+        }
+    }
+    @include media(940px) {
+        &-header {
+            padding: 2rem 0;
+        }
+        &-h2 {
+            font: {
+                weight: 300;
+                size: 2.2rem;
+            }
+        }
+        &-p {
+            margin-top: 1rem;
+            font: {
+                weight: 600;
+                size: 2.2rem;
+            }
+        }
+    }
 }
 
-//cards2//
-.cards2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.card-2{
-    width: 45%;
-    height: auto;
-    background-color: $color-gradient-azul-9;
-    display: flex; 
-    flex-direction: row;
-    align-items: center;
-    border-radius: 5rem;
-    box-shadow: $box-shadow-card;
+.Card {
+    background: $color-azul-claro;
+    color: $color-azul;
+    width: 100%;
+    padding: 2rem;
     overflow: hidden;
-    margin-top: 4.5rem;
-    margin-bottom: 4.5rem;
- }
 
+    border-radius: 1.5rem;
 
- .card2-image{
-    width: 30rem;
-    height: 30rem;
-    margin-right: 1rem;
-    margin-left: 1.5rem;
-    border-radius: 3rem;
-    margin-right: 1.5rem;
-    margin:1rem;
-    
-}
-
-.card2-title{
-    font:{
-        family:$font-open-sans;
-        weight:700;
-        size: 5rem;
-
+    @include flex(column, nowrap, center, flex-start);
+    &-header {
+        width: 100%;
+        @include flex(row, nowrap, flex-start, center);
     }
-    margin-bottom: 1.5rem;
-    color: $color-azul;
-}
+    &-image {
+        width: 15rem;
+        height: 15rem;
+        overflow: hidden;
 
-.card2-text{
-    font:{
-        font-family: $font-open-sans;
-        weight:200;
-        size: 2.5rem;
+        border-radius: 1.5rem;
+
+        position: relative;
     }
-    color: $color-azul;
-}
-
-
-
-//breakpoint 1700px//
-@include media(1720px){
-    .cards1{
-        &-img{
-            width: 45rem;
-            height: auto;
-        }
+    &-img {
+        object-fit: cover;
+    }
+    &-gradient {
+        background: $color-azul-4;
         
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
     }
-    .info1-text{
-        font:{
+    &-title {
+        padding: 0 2rem;
+        @include flex(column, nowrap, center, flex-start);
+    }
+    &-h3 {
+        font: {
+            weight: 800;
+            size: 3rem;
+        }
+    }
+    &-modality {
+        @include flex(column, nowrap, center, flex-start);
+    }
+    &-info {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    &-p {
+        font: {
+            weight: 500;
             size: 2rem;
         }
     }
-    .btnAgendar{
-        font:{
-            size:2rem;
-        }
-    }
-
-}
-//breackpoint 1736px
-@include media(1736px){
-    .card2-image{
-        width: 24rem;
-        height: 24rem;
-    }
-    .card2-title{
-        font-size: 4rem;
-    }
-    .card2-text{
-        font-size: 2rem;
-    }
-}
-//breakpoint 1329px//
-@include media(1329px){
-    .cards1{
-        &-img{
-            width: 34rem;
-            height: auto;
-        }
-        
-    }
-    .info1-text{
-        font:{
-            size: 2rem;
-        }
-    }
-    .btnAgendar{
-        font:{
-            size:2rem;
-        }
-    }
-
-}
-
-//breakpoint 1200px//
-@include media(1200px){
-    .cards1{
-        &-img{
-            width: 30rem;
-            height: 28rem;
-        }
-        
-    }
-    .info1-text{
-        font:{
-            size: 2rem;
-        }
-    }
-    .btnAgendar{
-        font:{
-            size:2rem;
-        }
-    }
-
-}
-
-//breackpoint 1180px
-@include media(1180px){
-    .vinieta1{
-        padding-left: 2rem;
-    }
-    .cards-container{
-        background: linear-gradient(to right, rgb(171, 182, 221) 0%, rgb(223, 167, 131) 100%);
-    }
-    .cards1{
-        display: none;
-    }
-    .cards2{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .card-2{
-        width: 95%;
-    }
-    .cards1-reverse{
-        display:none;
-    }
-
-    .cardsmobile{
-        display: flex;
-        flex-direction: column;
-        background-color: $color-gradient-azul-9;
-        padding: 1rem;
-        border-radius: 3rem;
-        width: 85%;
+    &-ul {
         margin-top: 1rem;
-        margin-bottom: 1rem;
+        font: {
+            weight: 400;
+            size: 1.8rem;
+        }
     }
-    .cardsmobile-imginfo{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        
+    &-li {
+        margin-left: 3rem;
+        list-style: disc;
     }
-    .cards1-img{
-        width: 18rem;
-        height: 18rem;
+    &-contact {
+        width: 100%;
+        margin-top: 1rem;
+        @include flex(column, nowrap, center, flex-end);
     }
-    .vinieta2-words1{
-        font-size: 3.5rem;
+    &-a {
+        background: $color-naranja;
+        padding: 1rem 1.5rem;
 
-    }
-    .vinieta2-words2{
-        font-size: 2.5rem;
-    }
-    .vinieta2{
-        padding-left: 2rem;
+        border-radius: 10rem;
+        font: {
+            weight: 500;
+            size: 1.8rem;
+        }
     }
 
-}
-
-//breackpoint 672px
-@include media(600px){
-    .card1-img{
-        width: 18rem;
-        height: 18rem;
-
-    }
-    .info1-title{
-        font-size: 3rem;
-    }
-    .info1-text{
-        font-size: 1.8rem;
+    @include media(450px) {
+        &-image {
+            width: 10rem;
+            min-width: 10rem;
+            height: 10rem;
+            min-height: 10rem;
+        }
     }
 }
 
-//breackpoint 600px
-@include media(600px){
-    .main-cards{
-        margin-top: -2rem;
-    }
-}
 
-//breackpoint 495px
-@include media(495px){
-    .info1-title{
-        font-size: 3rem;
+.Jobs {
+    &-wrapper {}
+    &-header {
+        background: $color-azul;
+        color: $color-naranja;
+        padding: 4rem 0;
     }
+    &-h2 {
+        font: {
+            weight: 900;
+            size: 5rem;
+        }
+    }
+    &-sub {
+        font: {
+            weight: 400;
+            size: 3.5rem;
+        }
+    }
+    &-cards {
+        margin-top: 3rem;
+        @include grid(2, 4rem);
+    }
+    &-card {
+        background: $color-azul-claro;
+        width: 100%;
+        height: 25rem;
+        overflow: hidden;
 
-    .card2-image{
-        width: 17rem;
-        height: 17rem;
+        border-radius: 2rem;
+
+        @include flex(row, nowrap, flex-start, center);
+    }
+    &-image {
+        width: 25rem;
+        min-width: 25rem;
+        height: 100%;
+        overflow: hidden;
+
+        border-radius: 2rem;
+    }
+    &-img {
+        object-fit: cover;
+    }
+    &-info {
+        color: $color-azul;
+        width: calc(100% - 25rem);
+        padding: 2rem;
+    }
+    &-h3 {
+        font: {
+            weight: 700;
+            size: 3rem;
+        }
+    }
+    &-p {
+        &--bold {
+            font: {
+                weight: 700;
+            }
+        }
+    }
+    &-li {
+        margin-left: 3rem;
+        list-style: disc;
+    }
+    @include media(1220px) {
+        &-cards {
+            @include grid(2,1rem);
+        }
+    }
+    @include media(1135px) {
+        &-h3 {
+            font: {
+                size: 2.5rem;
+            }
+        }
+        &-p {
+            font: {
+                size: 1.5rem;
+            }
+        }
+        &-ul {
+            font: {
+                size: 1.5rem;
+            }
+        }
+    }
+    @include media(1040px) {
+        &-card {
+            height: 20rem;
+        }
+        &-image {
+            width: 20rem;
+            min-width: 20rem;
+        }
+        &-info {
+            width: calc(100% - 20rem);
+            padding: 1rem;
+        }
+    }
+    @include media(950px) {
+        &-cards {
+            @include grid(1, 1rem);
+        }
+        &-info {
+            padding: 2rem;
+        }
+    }
+    @include media(600px) {
+        &-header {
+            padding: 2rem 0;
+        }
+        &-h2 {
+            font: {
+                size: 3.5rem;
+            }
+        }
+        &-sub {
+            font: {
+                size: 2.5rem;
+            }
+        }
+    }
+    @include media(450px) {
+        &-image {
+            width: 18rem;
+            min-width: 18rem;
+        }
+        &-info {
+            padding: 1rem;
+        }
     }
 }

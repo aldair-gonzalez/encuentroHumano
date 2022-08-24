@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="http://www.example.com/">
-    <link rel="icon" type="image/png" href="assets/logo/Logo.png">
+    <link rel="icon" type="image/png" href="./assets/logo/Logo.png">
     <title>Encuentro humano Counseling</title>
     <link rel="stylesheet" href="css/app.css">
     <script defer src="js/index.js"></script>
@@ -66,7 +66,7 @@
 
     <!-- Intro -->
     <section class="Intro">
-        <div class="Intro-wrapper">
+        <div class="Intro-wrapper Wrapper">
             <div class="Intro-card">
                 <p class="Intro-text">
                     "Ser empático es ver el mundo a través de los ojos del otro y no ver nuestro mundo reflejado en sus ojos"
@@ -281,25 +281,41 @@
     </div>
 
     <!-- footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="logo">
-                <img src="./assets/logo/logo.svg" alt="logo encuentro humano Counseling" class="logo-image">
-                <h3 class="logo-words">Encuentro Humano Counseling</h3>
-            </div>
-            <div class="redes">
-                
-                <img src="./assets/icons/igicon.svg" alt="ig icon" class="redes-icon">
-                <h3 class="redes-words">@encuentrohumanocounseling</h3>
-            </div>
-            <div class="redes">
-                <img src="./assets/icons/mail-icon.svg" alt="mail icon" class="redes-icon">
-                <h3 class="redes-words">lausigal@gmail.com</h3>
-            </div>
-        </div>
-        <div>
-            <a href="#"> <img src="./assets/icons/goup-icon.svg" alt="flecha para ir hacia arriba" class="footer-arrow"></a>
+    <footer class="Footer">
+        <div class="Footer-wrapper Wrapper">
+            <ul class="Footer-ul">
+                <li class="Footer-li">
+                    <a class="Footer-a" href="./">
+                        <div class="Footer-icon Footer-icon--logo">
+                            <img class="Footer-img" src="./assets/logo/Logo.png" alt="">
+                        </div>
+                        <p class="Footer-name">Encuentro Humano Counseling</p>
+                    </a>
+                </li>
+                <li class="Footer-li">
+                    <a class="Footer-a" href="./">
+                        <div class="Footer-icon">
+                            <img class="Footer-img" src="./assets/icons/instagram.svg" alt="">
+                        </div>
+                        <p class="Footer-text">encuentrohumanocounseling</p>
+                    </a>
+                </li>
+                <li class="Footer-li">
+                    <a class="Footer-a" href="./">
+                        <div class="Footer-icon">
+                            <img class="Footer-img" src="./assets/icons/mail-icon.svg" alt="">
+                        </div>
+                        <p class="Footer-text">lausigal@hotmail.com</p>
+                    </a>
+                </li>
+            </ul>
+            <button class="Footer-button" id="To-top">
+                <svg class="Footer-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+                </svg>
+            </button>
         </div>
     </footer>
+
 </body>
 </html>

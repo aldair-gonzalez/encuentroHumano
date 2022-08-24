@@ -15,10 +15,15 @@ const ReferencesButtonBefore = document.getElementById('References-button-before
 const ReferencesButtonAfter = document.getElementById('References-button-after');
 const ReferencesCircles = [...document.getElementsByClassName('References-circle')];
 
+// Button top
+const buttonTop = document.getElementById('To-top');
 
 
 // Margen a todo el body
 document.body.style.marginTop = header.offsetHeight + 'px';
+
+// ButtonTop
+buttonTop.addEventListener('click', () => window.scroll(0, 0));
 
 
 // Carousel
