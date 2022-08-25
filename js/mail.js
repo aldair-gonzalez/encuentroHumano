@@ -5,6 +5,11 @@ const formName = document.getElementById('Form-name');
 const formMessage = document.getElementById('Form-message');
 const formInput = [...document.getElementsByClassName('Form-input')];
 
+
+// Button Ok
+const buttonOk = document.getElementById('Button-ok');
+const alert = document.getElementById('Alert');
+
 // Validacion de formulario
 // Inputs no deben de estar vacios
 if (form && formInput && formMail && formName && formMessage) {
@@ -50,14 +55,20 @@ if (form && formInput && formMail && formName && formMessage) {
             // emailjs.send('service_7irjt7a', 'template_vh96tr8', templateParams)
             emailjs.send("service_7irjt7a", "template_vh96tr8", templateParams)
                 .then(function(response) {
-                       console.log('SUCCESS!', response.status, response.text);
+                       console.log(response);
                     }, function(error) {
-                   console.log('FAILED...', error);
-            });
-            alert('Gracias por contactarnos');
-            location.reload();
+                        alert("Hubo un error en el envío del formulario");
+                        console.log(error);
+                    });
+                    alert.classList.add("is-ok");
+
         } else {
             alert('Favor de llenar todos los campos sin caracteres especiales');
         }
     });
 }
+
+buttonOk.addEventListener('click', () => {
+    // Recargar la página al inicio
+    window.location = './';
+});
