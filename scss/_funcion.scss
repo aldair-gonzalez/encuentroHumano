@@ -136,6 +136,7 @@
             weight: 600;
             size: 1.9rem;
         }
+        color: $color-blanco;
     }
 
     @include media(1300px) {
@@ -174,7 +175,7 @@
         }
     }
     @include media(960px) {
-        background: linear-gradient(to right, $color-lila 0%, $color-gradient-naranja 100%);
+        background: linear-gradient(to right,rgb(135 158 238) 0%, rgb(198 211 255) 100%);
         &-cards {
             display: none;
             &--mobile {
@@ -282,6 +283,7 @@
             weight: 500;
             size: 1.8rem;
         }
+        color: $color-blanco;
     }
 
     @include media(450px) {
@@ -307,12 +309,14 @@
             weight: 900;
             size: 5rem;
         }
+        color: $color-blanco;
     }
     &-sub {
         font: {
             weight: 400;
             size: 3.5rem;
         }
+        color: $color-blanco;
     }
     &-cards {
         margin-top: 3rem;

@@ -34,7 +34,7 @@
         position: relative;
     }
     &-number {
-        background: $color-naranja;
+        background: #5a79e3;
         color: $color-blanco;
 
         position: absolute;
@@ -91,7 +91,7 @@
 
 
 .Form {
-    background: linear-gradient(to right, $color-lila 0%, $color-gradient-naranja 100%);
+    background: linear-gradient(to right, rgb(135 158 238) 0%, rgb(198 211 255) 100%);
     width: 100%;
     height: 100rem;
 
